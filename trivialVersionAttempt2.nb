@@ -1,0 +1,106 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3219,         96]
+NotebookOptionsPosition[      2862,         82]
+NotebookOutlinePosition[      3266,         98]
+CellTagsIndexPosition[      3223,         95]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"g", "=", 
+   RowBox[{
+   "InputString", "[", "\"\<Enter the exrepsion/equation\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"xMin", "=", 
+   RowBox[{"-", "100"}]}], ";", 
+  RowBox[{"xMax", "=", "100"}], ";", 
+  RowBox[{"yMin", "=", 
+   RowBox[{"-", "100"}]}], ";", 
+  RowBox[{"yMax", "=", "100"}], ";", 
+  RowBox[{"zMin", "=", 
+   RowBox[{"-", "100"}]}], ";", 
+  RowBox[{"zMax", "=", "100"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Evaluate", "[", 
+       RowBox[{
+       "InputString", "[", 
+        "\"\<Type yes if you want to specify domain and range\nDefault \
+values: -100<=x<=100, -100<=y<=100, -100<=y<=100\>\"", "]"}], "]"}], "==", 
+      "\"\<yes\>\""}], " ", "||", " ", "\"\<Yes\>\"", " ", "||", 
+     "\"\<YES\>\""}], ",", "\[IndentingNewLine]", "  ", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"xMin", "=", 
+       RowBox[{"Input", "[", "\"\<Please input X-Min\>\"", "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"xMax", "=", 
+       RowBox[{"Input", "[", "\"\<Please input X-Max\>\"", "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"yMin", "=", 
+       RowBox[{"Input", "[", "\"\<Please input Y-Min\>\"", "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"yMax", "=", 
+       RowBox[{"Input", "[", "\"\<Please input Y-Max\>\"", "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"zMin", "=", 
+       RowBox[{"Input", "[", "\"\<Please input Z-Min\>\"", "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"zMax", "=", 
+       RowBox[{"Input", "[", "\"\<Please input Z-Max\>\"", "]"}]}], ";"}], 
+     "\[IndentingNewLine]", "}"}], ","}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"ContourPlot3D", "[", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{"ToExpression", "[", "g", "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "xMin", ",", "xMax"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "yMin", ",", "yMax"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "zMin", ",", "zMax"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8645391126384373`*^9, 
+  3.8645391475345387`*^9}},ExpressionUUID->"244b1a8a-8cf9-4bc0-a3e8-\
+418c32f34b46"]
+},
+WindowSize->{571.8, 524.4},
+WindowMargins->{{284.4, Automatic}, {12, Automatic}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"13dff4b1-3059-4d68-8626-8f49c3b85a3d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2300, 60, 428, "Input",ExpressionUUID->"244b1a8a-8cf9-4bc0-a3e8-418c32f34b46"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
